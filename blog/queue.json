@@ -11,14 +11,6 @@
       "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/7e43c5ae325e/profilaktika-zasorov-kanalizatsii-kafe/"
     },
     {
-      "slug": "skolko-stoit-prochistka-kanalizatsii-ekaterinburg",
-      "path": "articles/skolko-stoit-prochistka-kanalizatsii-ekaterinburg.md",
-      "title": "Сколько стоит прочистка канализации в Екатеринбурге и как не переплатить",
-      "description": "Из чего складывается цена прочистки канализации в Екатеринбурге: прайс по видам засоров, расчёт по метрам и выезду, примеры смет и как не переплатить.",
-      "reading_time": "6 мин чтения",
-      "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/20a382fe14e6/skolko-stoit-prochistka-kanalizatsii-ekaterinburg/"
-    },
-    {
       "slug": "zasor-kanalizatsii-v-chastnom-dome",
       "path": "articles/zasor-kanalizatsii-v-chastnom-dome.md",
       "title": "Засор канализации в частном доме: как найти причину и что делать",
@@ -28,5 +20,12 @@
     }
   ],
   "scheduled": [],
-  "published": []
+  "published": [
+    {
+      "slug": "skolko-stoit-prochistka-kanalizatsii-ekaterinburg",
+      "title": "Сколько стоит прочистка канализации в Екатеринбурге и как не переплатить",
+      "url": "https://prochistka-kanalizatsii.ru/blog/skolko-stoit-prochistka-kanalizatsii-ekaterinburg/",
+      "date": "2026-11-18"
+    }
+  ]
 }
