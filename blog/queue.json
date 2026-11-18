@@ -3,12 +3,28 @@
   "updated": "2026-11-18",
   "awaiting": [
     {
+      "slug": "profilaktika-zasorov-kanalizatsii-kafe",
+      "path": "articles/profilaktika-zasorov-kanalizatsii-kafe.md",
+      "title": "Профилактика засоров канализации в кафе и ресторане: график и чек-лист",
+      "description": "Как не допустить засоров канализации в кафе и ресторане: причины, график профилактической прочистки, чек-лист для кухни и что делать при аварии.",
+      "reading_time": "9 мин чтения",
+      "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/7e43c5ae325e/profilaktika-zasorov-kanalizatsii-kafe/"
+    },
+    {
       "slug": "skolko-stoit-prochistka-kanalizatsii-ekaterinburg",
       "path": "articles/skolko-stoit-prochistka-kanalizatsii-ekaterinburg.md",
       "title": "Сколько стоит прочистка канализации в Екатеринбурге и как не переплатить",
       "description": "Из чего складывается цена прочистки канализации в Екатеринбурге: прайс по видам засоров, расчёт по метрам и выезду, примеры смет и как не переплатить.",
       "reading_time": "6 мин чтения",
       "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/20a382fe14e6/skolko-stoit-prochistka-kanalizatsii-ekaterinburg/"
+    },
+    {
+      "slug": "zasor-kanalizatsii-v-chastnom-dome",
+      "path": "articles/zasor-kanalizatsii-v-chastnom-dome.md",
+      "title": "Засор канализации в частном доме: как найти причину и что делать",
+      "description": "Что делать при засоре канализации в частном доме: как понять, где затор, что можно сделать самому, когда звать мастера и как не допустить повторения.",
+      "reading_time": "10 мин чтения",
+      "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/d970f3b86f5c/zasor-kanalizatsii-v-chastnom-dome/"
     }
   ],
   "scheduled": [],
