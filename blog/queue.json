@@ -3,14 +3,6 @@
   "updated": "2026-11-18",
   "awaiting": [
     {
-      "slug": "profilaktika-zasorov-kanalizatsii-kafe",
-      "path": "articles/profilaktika-zasorov-kanalizatsii-kafe.md",
-      "title": "Профилактика засоров канализации в кафе и ресторане: график и чек-лист",
-      "description": "Как не допустить засоров канализации в кафе и ресторане: причины, график профилактической прочистки, чек-лист для кухни и что делать при аварии.",
-      "reading_time": "9 мин чтения",
-      "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/7e43c5ae325e/profilaktika-zasorov-kanalizatsii-kafe/"
-    },
-    {
       "slug": "zasor-kanalizatsii-v-chastnom-dome",
       "path": "articles/zasor-kanalizatsii-v-chastnom-dome.md",
       "title": "Засор канализации в частном доме: как найти причину и что делать",
@@ -19,7 +11,13 @@
       "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/d970f3b86f5c/zasor-kanalizatsii-v-chastnom-dome/"
     }
   ],
-  "scheduled": [],
+  "scheduled": [
+    {
+      "slug": "profilaktika-zasorov-kanalizatsii-kafe",
+      "title": "Профилактика засоров канализации в кафе и ресторане: график и чек-лист",
+      "date": "2026-11-25"
+    }
+  ],
   "published": [
     {
       "slug": "skolko-stoit-prochistka-kanalizatsii-ekaterinburg",
