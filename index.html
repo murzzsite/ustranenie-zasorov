@@ -18,10 +18,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="blog/blog.css">
 <script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Plumber","name":"Устранение засоров","description":"Прочистка канализации в Екатеринбурге и области: гидродинамика, механика, телеинспекция.","telephone":"+7-904-386-16-99","email":"ustranenie-zasorov@mail.ru","areaServed":"Екатеринбург и Свердловская область","address":{"@type":"PostalAddress","addressLocality":"Екатеринбург","addressCountry":"RU"},"openingHours":"Mo-Su 07:00-24:00","foundingDate":"2011","url":"https://prochistka-kanalizatsii.ru/","image":"https://prochistka-kanalizatsii.ru/img/hero-flat.jpg"}
 </script>
+<link rel="alternate" type="application/rss+xml" title="Блог" href="feed.xml">
 </head>
 <body>
 <a class="skip" href="#calc">К расчёту стоимости</a>
@@ -44,7 +46,7 @@
       <a href="#price">Прайс</a>
       <a href="#work">Объекты</a>
       <a href="#faq">Вопросы</a>
-    </nav>
+    <!-- BLOGNAV:START --><!-- BLOGNAV:END --></nav>
     <a class="tile tile--ink tile--call" href="tel:+79043861699" data-in="3">+7 (904) 386-16-99</a>
     <button class="tile tile--ink tile--burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" data-in="3">Меню</button>
   </div>
@@ -249,6 +251,12 @@
       <div class="price__side">
         <h2 class="head" id="priceH" data-r>Прайс</h2>
         <p class="price__note" data-r>Цены указаны «от». Итог мастер называет после диагностики и до начала работ.</p>
+        <ul class="price__links" data-r>
+          <li><a href="/prochistka-kanalizatsii-v-kvartire/">Прочистка в квартире и доме</a></li>
+          <li><a href="/prochistka-naruzhnoj-kanalizatsii/">Наружная сеть и колодцы</a></li>
+          <li><a href="/prochistka-kanalizatsii-dlya-biznesa/">Для кафе, офисов и предприятий</a></li>
+          <li><a href="/teleinspektsiya-kanalizatsii/">Телеинспекция труб</a></li>
+        </ul>
       </div>
       <div class="price__tab" data-r>
         <table class="ptable">
@@ -373,9 +381,10 @@
         <input type="hidden" name="calc" id="calcField">
         <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
         <p class="form__calc" id="formCalc" hidden></p>
+        <label class="agree"><input type="checkbox" name="agree" required><span>Согласен на <a href="/consent.html">обработку персональных данных</a> и с <a href="/privacy.html">политикой конфиденциальности</a></span></label>
         <button class="btn" type="submit">Перезвоните мне <svg class="arr" viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M3 10h13M11 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2"/></svg></button>
         <p class="form__status" id="formStatus" role="status"></p>
-        <p class="form__legal">Нажимая кнопку, вы соглашаетесь с <a href="privacy.html">политикой обработки данных</a>.</p>
+        
       </form>
 
       <div class="order__aside" data-r>
@@ -391,6 +400,7 @@
       </div>
     </div>
   </section>
+<!-- BLOG:START --><!-- BLOG:END -->
 </main>
 
 <footer class="foot" id="foot">
@@ -402,7 +412,7 @@
   <p class="foot__say lead">Не уходит вода — звоните сразу. Мастер назовёт цену до начала работ, и в чеке не будет неожиданностей.</p>
   <a class="foot__phone" href="tel:+79043861699" aria-label="Позвонить: +7 904 386-16-99"><span class="foot__chars" data-chars>+7 (904) 386-16-99</span></a>
   <div class="foot__meta">
-    <p><a href="mailto:ustranenie-zasorov@mail.ru">ustranenie-zasorov@mail.ru</a> · <a href="privacy.html">Политика данных</a></p>
+    <p><a href="mailto:ustranenie-zasorov@mail.ru">ustranenie-zasorov@mail.ru</a> · <a href="/privacy.html">Политика данных</a> · <a href="/consent.html">Согласие</a></p>
     <p>Фото: из архива компании</p>
     <p>Екатеринбург, 2026</p>
   </div>

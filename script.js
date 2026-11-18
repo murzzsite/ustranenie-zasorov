@@ -1,3 +1,4 @@
+const YM_ID = 0; // номер счётчика Яндекс Метрики: впишем, когда клиент пришлёт
 const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/9GJAX8MQ2D';
 
 (() => {
@@ -6,6 +7,35 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/9GJAX8MQ2D'
   const $$ = (s, c = document) => [...c.querySelectorAll(s)];
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fmt = n => n.toLocaleString('ru-RU').replace(/ /g, ' ') + ' ₽';
+
+  /* ---------- cookie и Метрика ---------- */
+  const loadMetrica = () => {
+    if (!YM_ID || window.ym) return;
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments); };
+      m[i].l = 1 * new Date();
+      k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a);
+    })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js', 'ym');
+    window.ym(YM_ID, 'init', { clickmap: true, trackLinks: true, accurateTrackBounce: true });
+  };
+  let cookieChoice = null;
+  try { cookieChoice = localStorage.getItem('pk_cookie'); } catch (_) {}
+  if (cookieChoice === 'all') loadMetrica();
+  if (!cookieChoice) {
+    const bar = document.createElement('div');
+    bar.className = 'cookie';
+    bar.setAttribute('role', 'region');
+    bar.setAttribute('aria-label', 'Использование cookie');
+    bar.innerHTML = '<p>Мы используем cookie, чтобы сайт работал, и Яндекс Метрику, чтобы понимать, что улучшить. Подробнее в <a href="/privacy.html#cookie">политике конфиденциальности</a>.</p><div class="cookie__actions"><button type="button" class="btn" data-c="all">Принять</button><button type="button" class="btn btn--light" data-c="necessary">Только необходимые</button></div>';
+    document.body.appendChild(bar);
+    bar.addEventListener('click', e => {
+      const c = e.target.closest('[data-c]')?.dataset.c;
+      if (!c) return;
+      try { localStorage.setItem('pk_cookie', c); } catch (_) {}
+      if (c === 'all') loadMetrica();
+      bar.remove();
+    });
+  }
 
   /* ---------- шапка, меню ---------- */
   const bar = $('#bar');
@@ -217,10 +247,12 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/9GJAX8MQ2D'
     current = { rows, total, obj };
   };
 
-  form?.addEventListener('input', compute);
-  form?.addEventListener('change', compute);
-  compute();
-  totalEl.textContent = 'от ' + fmt(current.total);
+  if (form) {
+    form.addEventListener('input', compute);
+    form.addEventListener('change', compute);
+    compute();
+    totalEl.textContent = 'от ' + fmt(current.total);
+  }
 
   const summary = () =>
     `${current.obj}. ` + current.rows.map(([n, s]) => `${n}: ${fmt(s)}`).join('; ') + `. Ориентир: от ${fmt(current.total)}`;
@@ -250,6 +282,7 @@ const LEAD_ENDPOINT = 'https://lead-relay.leestygpt.workers.dev/lead/9GJAX8MQ2D'
     payload.comment = [payload.comment, extra].filter(Boolean).join('\n');
     delete payload.calc;
     delete payload._gotcha;
+    delete payload.agree;
 
     const orig = btn.innerHTML;
     btn.disabled = true;

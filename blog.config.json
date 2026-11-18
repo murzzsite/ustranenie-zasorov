@@ -1,0 +1,39 @@
+{
+  "siteName": "Устранение засоров",
+  "siteUrl": "https://prochistka-kanalizatsii.ru",
+  "lang": "ru",
+  "repo": "murzzsite/ustranenie-zasorov",
+  "ref": "9GJAX8MQ2D",
+  "workerUrl": "https://lead-relay.leestygpt.workers.dev",
+  "blogTitle": "Блог",
+  "blogDescription": "Статьи о прочистке канализации в Екатеринбурге: цены, методы, что делать при засоре.",
+  "homeTitle": "Полезные статьи",
+  "author": {
+    "name": "Устранение засоров",
+    "jobTitle": "",
+    "type": "Organization"
+  },
+  "ctaTitle": "Остались вопросы?",
+  "ctaText": "Оставьте заявку или позвоните: мастер приедет, найдёт причину засора и назовёт цену до начала работ.",
+  "ctaButton": "Оставить заявку",
+  "ctaUrl": "/#order",
+  "disclaimer": "",
+  "telegramNotify": true,
+  "cadenceDays": 7,
+  "homeLatest": 3,
+  "staticPages": [
+    "/",
+    "/prochistka-kanalizatsii-v-kvartire/",
+    "/prochistka-naruzhnoj-kanalizatsii/",
+    "/prochistka-kanalizatsii-dlya-biznesa/",
+    "/teleinspektsiya-kanalizatsii/"
+  ],
+  "indexNowKey": "427b588b389ab86004f28847893df7c1",
+  "previewSecret": "eaeb7e770862e11e",
+  "theme": {
+    "bg": "var(--bg)",
+    "surface": "var(--surface)",
+    "ink": "var(--ink)",
+    "soft": "var(--muted)"
+  }
+}
