@@ -1,21 +1,17 @@
 {
   "site": "https://prochistka-kanalizatsii.ru",
   "updated": "2026-11-18",
-  "awaiting": [
-    {
-      "slug": "zasor-kanalizatsii-v-chastnom-dome",
-      "path": "articles/zasor-kanalizatsii-v-chastnom-dome.md",
-      "title": "Засор канализации в частном доме: как найти причину и что делать",
-      "description": "Что делать при засоре канализации в частном доме: как понять, где затор, что можно сделать самому, когда звать мастера и как не допустить повторения.",
-      "reading_time": "10 мин чтения",
-      "preview_url": "https://prochistka-kanalizatsii.ru/blog/preview/d970f3b86f5c/zasor-kanalizatsii-v-chastnom-dome/"
-    }
-  ],
+  "awaiting": [],
   "scheduled": [
     {
       "slug": "profilaktika-zasorov-kanalizatsii-kafe",
       "title": "Профилактика засоров канализации в кафе и ресторане: график и чек-лист",
       "date": "2026-11-25"
+    },
+    {
+      "slug": "zasor-kanalizatsii-v-chastnom-dome",
+      "title": "Засор канализации в частном доме: как найти причину и что делать",
+      "date": "2026-12-02"
     }
   ],
   "published": [
