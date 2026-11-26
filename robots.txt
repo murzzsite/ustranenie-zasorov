@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /materials.html
+Disallow: /scripts.html
+Disallow: /outreach.html
+
 Sitemap: https://prochistka-kanalizatsii.ru/sitemap.xml
